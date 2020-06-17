@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Josia HAHAH :p Ketzia Arella"  />
+  <title>Form Order</title>
+	<link href= "styles/style2.css" rel="stylesheet" /> 
+	
+</head>
+<body>
+<img src="img/header.jpg" alt="header" class="header"/>
+<div class="outer">
+<h1>Form Order!</h1>
+<p>Untuk pemesanan mohon diisi dengan lengkap data-datanya. Terimakasih.</p>
+<div>
+<form id="apply" method="post" action="index.html">
+
+<div class="row">
+	<div class="col25">
+		<label for="JenisKue">Jenis Kue</label>
+	</div>
+	<div class="col75">
+		<input type="text" placeholder="Kue Custom" class="form-control" disabled></input>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col25">
+		<label for="CakeFlavour">Cake Flavour</label>
+	</div>
+	<div class="col75">
+		<select name="flavour">
+			<option value="" disabled selected>Pilih rasa</option>
+			<option value="Vanilla">Vanilla</option>
+			<option value="Chocolate">Chocolate</option>
+			<option value="Matcha">Matcha</option>
+			<option value="Oreo">Oreo</option>
+		</select>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col25">
+		<label for="Penerima">Nama Penerima</label>
+	</div>
+	<div class="col75">
+		<input type="text" class="form-control"></input>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col25">
+		<label for="Alamat">Alamat</label>
+	</div>
+	<div class="col75">
+		<input type="text" class="form-control"></input>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col25">
+		<label for="Telp">No. Tlpn</label>
+	</div>
+	<div class="col75">
+		<input type="text" class="form-control"></input>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col25">
+		<label for="penerimaan">Tgl Penerimaan</label>
+	</div>
+	<div class="col75">
+		<input type="date" class="form-control"></input>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col25">
+		<label for="Pengiriman">Jam Pengiriman</label>
+	</div>
+	<div class="col75">
+		<input type="text" class="form-control" placeholder="(09.00-17.00)"></input>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col25">
+		<label for="TulisanKue">Tulisan pada Kue</label>
+	</div>
+	<div class="col75">
+		<input type="text" class="form-control" placeholder="(max 8 huruf)"></input>
+	</div>
+</div>
+
+</div>
+<p>Keterangan:<br>
+*Free lilin<br>*berikan range jam pengiriman sekitar 2-3 jam. <br>
+yang dipakai langsung untuk acara lebih baik<br>dikirim H-1 agar tidak
+terburu-buru.</p>
+</div>
+<div>
+	<button type="submit" class="button" style="background-color: #be8781;
+    border: none;
+    color: #efc8cd;
+    padding: 18px 18px!important;
+    text-decoration: none;
+	text-align: center;
+    cursor: pointer; 
+	float: right;
+	border-radius: 8px;
+	margin: 40px 18%;
+	font-weight: bold;
+	-webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;" onclick="halo();">
+	<span style="font-family: Anta; letter-spacing: 0.1em; font-size: 2vw;">Pesan</span></button>
+</div>
+<script>
+function halo()
+{
+alert("Terima kasih, Pesanan anda sedang diproses");
+self.location.href = "index.html";
+}
+</script> 
+</form>
+
+</body>
+</html>

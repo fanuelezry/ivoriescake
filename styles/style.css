@@ -1,0 +1,366 @@
+/*<meta charset="utf-8" />
+  <meta name="description" content="Main page/ First page of the website" />
+  <meta name="keywords" content="HTML5, tags" />
+  <meta name="author" content="Josia Natanael Leho"  />
+  <link href= "styles/style.css" rel="stylesheet" /> 
+  <title>Lab3-week4-ass1a.index page</title>
+  */
+  /*export font*/
+@font-face {
+  font-family: Geo; src: url('geo.woff2') format('woff2'),
+         url('geo.woff') format('woff');
+}
+
+@font-face { font-family: Anta; src: url('anta.woff2') format('woff2'),
+         url('anta.woff') format('woff'); } 
+      h1, h4, b {
+         font-family: Anta;
+		 letter-spacing:0.1em;
+      }
+	  p {
+		 letter-spacing: 0.1em;
+         font-family: Geo;
+		 
+      }
+	  a {
+		  letter-spacing: 0.1em;
+	  }
+	  b {
+		  color: #A96F61;
+	  }
+	  
+/*the whole page*/
+body {	margin:0;	
+		background-color:#DCDCDC;}
+/*background image for index*/
+.headd {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*background-color: #fff;*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*box-shadow: 10px 5px 5px black;
+  border-bottom: thick black;
+  z-index: 1;*/
+}
+#roti {
+	margin-top: 85%;
+	width: 35%;
+	margin-left: 5%;
+	z-index: 2;
+}
+
+#cup {
+	margin-top: 85%;
+	width: 35%;
+	margin-left: 5%;
+	z-index: 2;
+}
+
+#back {
+	/*position: absolute;*/
+	height: auto;
+	max-width: 100%;
+	z-index: -1;
+	display: flex;
+	/*top: 20px;*/
+	/*filter:brightness(30%);*/
+	
+} /*any background image*/
+.tema{
+	font-family: Geo;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	background: transparent;
+	font-size: 2vw;
+}
+
+.rasa{
+	font-family: Geo;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	background: transparent;
+	font-size: 2vw;
+}
+
+.hiasan{
+	width: 4%;
+	height:9%;
+}
+
+.rasa:hover{
+	background: #A96F61;
+}
+#logo {
+	position: absolute;
+	height: 8%;
+	clear: both;
+	display: flex;
+	top: 5%;
+}
+
+#kotak {
+	position: absolute;
+	height: 80%;
+	width: 90%;
+	border-radius: 55px;
+	display: inline-block;
+	left: 5%;
+	top: 35%;
+	right: 5%;
+}
+
+#kotakk {
+	position: absolute;
+	height: 80%;
+	width: 90%;
+	border-radius: 55px;
+	display: inline-block;
+	left: 5%;
+	top: 35%;
+	right: 5%;
+}
+
+#produk {
+		max-width: 20%;
+		position:absolute;
+}
+
+
+#foto /*profile pict*/{ 	
+	width: 100%;
+	clear:both;
+	margin: 10px;
+	}
+	
+#index {
+	background-image: url(img/home.jpg);
+}
+
+input {
+	color: white;
+}
+.invalid{
+  border-color: #900;
+  background-color: darkred;
+}
+
+.valid{
+  border-color: white;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*header box, navigation tab*/
+.header {
+  float: right;
+  width: 100px;
+  height: 100px;
+  background: #555;
+  clear:both;
+  display: inline;
+}
+
+/*tit is for title, title in index*/
+#tit {
+	padding-top: 15%;
+	font-size: 9vw;
+	color: white;
+	font-family: engraversgothic Bt;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+#le /*subtitle*/{
+	color: white;
+	font-size: 2vw;
+	text-align: center;
+	font-family: Goudy Old Style;
+	letter-spacing: 0.1em;
+}
+
+section /*to make a square with glow*/
+	{
+		width:45.3%;
+		float:left;
+		box-shadow:0 4px 10px 0 rgba(0,0,0,0.36);
+		background-color: white;
+		margin: 60px 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;	
+		
+	}
+	
+.invis/*invisible square*/
+	{
+		width:33.3%;
+		float: left;
+		margin-left:8%;
+		margin-right:4%;
+		
+	}
+	/*iframe used to video player*/
+iframe {
+	margin-bottom: 4%;
+	margin-top: 4%;	
+	margin-left: 4%;
+	float: left;
+}
+	
+.section3 /*to make a square with glow with opacity*/
+	{
+		width:43.0%;
+		box-shadow:0 4px 10px 0 rgba(0,0,0,0.36);
+		background-color: black;
+		margin: 1.5%;
+		margin-top: 3%;
+		padding-left: 0.5%;
+		padding-right: 0.5%;
+		text-align: center;	
+		background: rgba(0,0,0,0.5);
+		color: white;
+	}
+	
+	td{
+		border: 1px solid black;
+		width: 100%;
+		overflow-x:auto;
+	}
+	
+
+.mainn {
+	/*margin-top: 10%;
+	padding-top: 15%;*/
+}
+/*used in apply.html for input */
+fieldset {
+	margin-left: 35%;
+	margin-right: 35%;
+	padding-left: 3.5%;
+	background: rgba(0, 0, 0, 0.5); 
+	color: white;
+	line-height: 2;
+	border-style: solid;
+	border-color: black;
+	font-family: Goudy Old Style;
+	font-size: 120%;
+}
+/*used after fieldset */
+legend {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.section2 /*only for about.html, 3 parts in 1 page*/
+	{
+		width:28%;
+		float:left;
+		box-shadow:0 4px 10px 0 rgba(0,0,0,0.36);
+		background-color: #fff;
+		margin: 1%;
+		padding: 0.5%;
+		text-align: center;	
+		border-style: ridge;
+	}
+	/*make the words justify*/
+	.jus{
+		text-align:justify;
+		font-family: Goudy Old Style;
+		margin: 20px 20px;
+		font-size: 18px;
+		line-height: 30px;
+	}
+	/*used in title*/
+	.cha{
+		font-family: engraversgothic Bt;
+		font-size: 40px;
+	}
+
+.button { /* css of every button*/
+  padding: 20px 60px;
+  text-align: center;
+ text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  transition-duration: 0.4s;
+  font-family: Goudy Old Style;
+}
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+.button5:hover { /*the hover button*/
+  background-color: #555555;
+  color: white;
+}
+/*used to delete the underline*/
+a button{
+	text-decoration:none;
+}
+
+/*footer css*/
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  margin-top: 20px;
+  background: rgba(239, 239, 239, 0.5); 
+  font-size:18px;
+  text-align: center;
+  clear:both;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}

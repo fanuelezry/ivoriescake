@@ -409,14 +409,20 @@ function closeNav() {
 	<button class="warna" id="green" type="button" style="width:4%; height: 9%; background: green; 
     border: none !important;
     font-size:0;" onclick="clickwarna(3)"></button>
-	<button class="warna" id="blue" type="button" style="width:4%; height: 9%; background: blue; " onclick="clickwarna(4)"></button>
+	<button class="warna" id="blue" type="button" style="width:4%; height: 9%; background: blue; " 
+	onclick="clickwarna(4)"></button>
 	<button class="warna" id="purple" type="button" style="width:4%; height: 9%; background: purple; 
     border: none !important;
     font-size:0;" onclick="clickwarna(5)"></button>
 	<button class="warna" id="pink" type="button" style="width:4%; height: 9%; background: pink; 
     border: none !important;
     font-size:0;" onclick="clickwarna(6)"></button>
-	
+	<button class="warna" id="cream" type="button" style="width:4%; height: 9%; background: #F7D8C4; 
+    border: none !important;
+    font-size:0;" onclick="clickwarna(7)"></button>
+	<button class="warna" id="brown" type="button" style="width:4%; height: 9%; background: #A96F61; 
+    border: none !important;
+    font-size:0;" onclick="clickwarna(8)"></button>
 </div>
 <div id="kotakk" style="margin-top: 97%; margin-left: 41%;">
 	<button onclick="clickk(0)" class="rasa">vanilla</button>
@@ -464,6 +470,71 @@ function clickwarna(i){
      x[j].style.border = "none";
 	}
     x[i].style.border = "5px #A96F61 solid";
+	
+	if (document.getElementById("roti").style.display == 'block') {
+		switch (i) { 
+			case 0:
+				document.getElementById('roti').src='custom/cakered.png';
+				break; 
+			case 1:
+				document.getElementById('roti').src='custom/cakeorange.png';
+				break; 
+			case 2:
+				document.getElementById('roti').src='custom/cakeyellow.png';
+				break; 
+			case 3:
+				document.getElementById('roti').src='custom/cakegreen.png';
+				break; 
+			case 4:
+				document.getElementById('roti').src='custom/cakeblue.png';
+				break; 
+			case 5:
+				document.getElementById('roti').src='custom/cakepurple.png';
+				break; 
+			case 6:
+				document.getElementById('roti').src='custom/cakepink.png';
+				break; 
+			case 7:
+				document.getElementById('roti').src='custom/cakecream.png';
+				break; 
+			case 8:
+				document.getElementById('roti').src='custom/cakebrown.png';
+				break; 
+		}
+	}
+	else 
+	{
+		switch (i) { 
+			case 0:
+				document.getElementById('cup').src='custom/cupred.png';
+				break; 
+			case 1:
+				document.getElementById('cup').src='custom/cuporange.png';
+				break; 
+			case 2:
+				document.getElementById('cup').src='custom/cupyellow.png';
+				break; 
+			case 3:
+				document.getElementById('cup').src='custom/cupgreen.png';
+				break; 
+			case 4:
+				document.getElementById('cup').src='custom/cupblue.png';
+				break; 
+			case 5:
+				document.getElementById('cup').src='custom/cuppurple.png';
+				break; 
+			case 6:
+				document.getElementById('cup').src='custom/cuppink.png';
+				break; 
+			case 7:
+				document.getElementById('cup').src='custom/cupcream.png';
+				break; 
+			case 8:
+				document.getElementById('cup').src='custom/cupbrown.png';
+				break; 
+				
+		}
+	}
 }
 
 function clicktema(i){
